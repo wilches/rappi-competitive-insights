@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "canonical": "big_mac",
+      "display_name": "Big Mac",
+      "aliases": ["Big Mac", "McBig Mac", "Big Mac Solo", "Hamburguesa Big Mac"]
+    },
+    {
+      "canonical": "mcnuggets_10",
+      "display_name": "McNuggets 10 piezas",
+      "aliases": ["McNuggets 10", "10 McNuggets", "McNuggets de Pollo 10", "Nuggets 10 pzas"]
+    },
+    {
+      "canonical": "happy_meal",
+      "display_name": "Cajita Feliz",
+      "aliases": ["Cajita Feliz", "Happy Meal", "Cajita Feliz Hamburguesa"]
+    }
+  ],
+  "brand": "McDonald's",
+  "brand_aliases": ["McDonald's", "McDonalds", "Mcdonald's", "MCDONALD'S"]
+}

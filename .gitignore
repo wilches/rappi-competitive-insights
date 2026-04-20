@@ -1,0 +1,9 @@
+venv/
+.env
+data/raw/*.json
+data/processed/*.csv
+logs/*.log
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.streamlit/secrets.toml

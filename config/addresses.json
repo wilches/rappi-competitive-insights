@@ -1,0 +1,30 @@
+{
+  "addresses": [
+    {"address_id": "cdmx_polanco_01", "city": "cdmx", "zone_type": "premium", "label": "Av. Presidente Masaryk 111, Polanco", "latitude": 19.4326, "longitude": -99.1962},
+    {"address_id": "cdmx_condesa_01", "city": "cdmx", "zone_type": "premium", "label": "Av. Tamaulipas 141, Condesa", "latitude": 19.4134, "longitude": -99.1760},
+    {"address_id": "cdmx_roma_01", "city": "cdmx", "zone_type": "middle", "label": "Av. Álvaro Obregón 185, Roma Norte", "latitude": 19.4155, "longitude": -99.1645},
+    {"address_id": "cdmx_narvarte_01", "city": "cdmx", "zone_type": "middle", "label": "Av. Cuauhtémoc 462, Narvarte", "latitude": 19.3925, "longitude": -99.1543},
+    {"address_id": "cdmx_coyoacan_01", "city": "cdmx", "zone_type": "middle", "label": "Av. Universidad 1900, Coyoacán", "latitude": 19.3326, "longitude": -99.1858},
+    {"address_id": "cdmx_iztapalapa_01", "city": "cdmx", "zone_type": "peripheral", "label": "Av. Ermita Iztapalapa 1514, Iztapalapa", "latitude": 19.3574, "longitude": -99.0822},
+    {"address_id": "cdmx_gam_01", "city": "cdmx", "zone_type": "peripheral", "label": "Av. Insurgentes Norte 1433, Gustavo A. Madero", "latitude": 19.4912, "longitude": -99.1320},
+    {"address_id": "cdmx_tlahuac_01", "city": "cdmx", "zone_type": "peripheral", "label": "Av. Tláhuac 4935, Tláhuac", "latitude": 19.2869, "longitude": -99.0109},
+
+    {"address_id": "gdl_providencia_01", "city": "gdl", "zone_type": "premium", "label": "Av. Pablo Neruda 3045, Providencia", "latitude": 20.7045, "longitude": -103.3920},
+    {"address_id": "gdl_chapalita_01", "city": "gdl", "zone_type": "premium", "label": "Av. Guadalupe 1106, Chapalita", "latitude": 20.6683, "longitude": -103.4027},
+    {"address_id": "gdl_americana_01", "city": "gdl", "zone_type": "middle", "label": "Av. Vallarta 1150, Americana", "latitude": 20.6776, "longitude": -103.3658},
+    {"address_id": "gdl_centro_01", "city": "gdl", "zone_type": "middle", "label": "Av. Juárez 238, Centro", "latitude": 20.6766, "longitude": -103.3469},
+    {"address_id": "gdl_zapopan_01", "city": "gdl", "zone_type": "middle", "label": "Av. Patria 1891, Zapopan", "latitude": 20.7120, "longitude": -103.4125},
+    {"address_id": "gdl_tlaquepaque_01", "city": "gdl", "zone_type": "peripheral", "label": "Av. Niños Héroes 112, Tlaquepaque", "latitude": 20.6408, "longitude": -103.3128},
+    {"address_id": "gdl_tonala_01", "city": "gdl", "zone_type": "peripheral", "label": "Av. Tonaltecas 140, Tonalá", "latitude": 20.6235, "longitude": -103.2344},
+    {"address_id": "gdl_tlajomulco_01", "city": "gdl", "zone_type": "peripheral", "label": "Av. Adolf Horn Jr. 7451, Tlajomulco", "latitude": 20.5453, "longitude": -103.4631},
+
+    {"address_id": "mty_sanpedro_01", "city": "mty", "zone_type": "premium", "label": "Calzada del Valle 400, San Pedro Garza García", "latitude": 25.6538, "longitude": -100.3568},
+    {"address_id": "mty_valle_01", "city": "mty", "zone_type": "premium", "label": "Av. Vasconcelos 150, San Pedro", "latitude": 25.6644, "longitude": -100.3747},
+    {"address_id": "mty_centro_01", "city": "mty", "zone_type": "middle", "label": "Av. Pino Suárez 506, Centro Monterrey", "latitude": 25.6717, "longitude": -100.3105},
+    {"address_id": "mty_obispado_01", "city": "mty", "zone_type": "middle", "label": "Av. Gonzalitos 460, Obispado", "latitude": 25.6792, "longitude": -100.3395},
+    {"address_id": "mty_cumbres_01", "city": "mty", "zone_type": "middle", "label": "Av. Paseo de los Leones 2440, Cumbres", "latitude": 25.7209, "longitude": -100.3806},
+    {"address_id": "mty_apodaca_01", "city": "mty", "zone_type": "peripheral", "label": "Av. Miguel Alemán 500, Apodaca", "latitude": 25.7815, "longitude": -100.1893},
+    {"address_id": "mty_guadalupe_01", "city": "mty", "zone_type": "peripheral", "label": "Av. Eloy Cavazos 1000, Guadalupe", "latitude": 25.6767, "longitude": -100.2565},
+    {"address_id": "mty_escobedo_01", "city": "mty", "zone_type": "peripheral", "label": "Av. Sendero 400, Escobedo", "latitude": 25.8005, "longitude": -100.3216}
+  ]
+}
