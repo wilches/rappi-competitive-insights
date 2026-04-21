@@ -1,0 +1,52 @@
+{
+  "stores": [
+    {
+      "city": "cdmx",
+      "store_uuid": "a08108e0-594d-4c9e-a2a0-e3a90be971b1",
+      "store_name": "McDonald's Plaza Galerías",
+      "latitude": 19.4319,
+      "longitude": -99.1860,
+      "zone_hint": "polanco"
+    },
+    {
+      "city": "cdmx",
+      "store_uuid": "99110872-0df2-4611-a74b-a21420bd86b9",
+      "store_name": "mcdonalds-sears-insurgentes",
+      "latitude": 19.412153,
+      "longitude": -99.1650947,
+      "zone_hint": "roma-norte"
+    },
+    {
+      "city": "gdl",
+      "store_uuid": "a908ac84-70ce-4573-be64-71358224c7c0",
+      "store_name": "McDonald's La Gran Plaza",
+      "latitude": 20.6742274,
+      "longitude": -103.4050709,
+      "zone_hint": "juan-manuel-vallarta-zapopan-ja"
+    },
+    {
+      "city": "gdl",
+      "store_uuid": "39818dc3-ad1e-4b57-8e0d-8701e55def17",
+      "store_name": "McDonald's Avenida Vallarta",
+      "latitude": 20.6750565,
+      "longitude": -103.3676046,
+      "zone_hint": "ladron-de-guevara-guadalajara"
+    },
+    {
+      "city": "mty",
+      "store_uuid": "481d691b-06cd-4e17-9794-c13a97aaea94",
+      "store_name": "McDonald's Hidalgo",
+      "latitude": 25.6683447,
+      "longitude": -100.3199461,
+      "zone_hint": "centro_mty"
+    },
+    {
+      "city": "mty",
+      "store_uuid": "f76da749-82ec-4f5f-8446-3a62f639ef83",
+      "store_name": "McDonald's Garza Sada",
+      "latitude": 25.6430245,
+      "longitude": -100.2875025,
+      "zone_hint": "altavista-monterrey"
+    }
+  ]
+}

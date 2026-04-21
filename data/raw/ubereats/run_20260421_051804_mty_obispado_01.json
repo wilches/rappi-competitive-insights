@@ -1,0 +1,7 @@
+{
+  "status": "failure",
+  "data": {
+    "message": "invalid_store_uuid",
+    "code": "404"
+  }
+}

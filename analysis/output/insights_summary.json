@@ -1,0 +1,146 @@
+{
+  "insight1": {
+    "pair_count": 58,
+    "overall_delta_pct": -0.6160873241633829,
+    "rappi_cheaper_pct": 13.793103448275861,
+    "rappi_equal_pct": 41.37931034482759,
+    "by_product": {
+      "big_mac": {
+        "mean": 2.9,
+        "median": 0.0,
+        "std": 5.27,
+        "count": 15
+      },
+      "happy_meal": {
+        "mean": 3.96,
+        "median": 4.65,
+        "std": 3.8,
+        "count": 22
+      },
+      "mcnuggets_10": {
+        "mean": -7.93,
+        "median": 0.0,
+        "std": 21.66,
+        "count": 21
+      }
+    }
+  },
+  "insight2": {
+    "by_zone": {
+      "middle": {
+        "mean": -0.21,
+        "median": 4.65,
+        "count": 23
+      },
+      "peripheral": {
+        "mean": -4.73,
+        "median": 0.0,
+        "count": 19
+      },
+      "premium": {
+        "mean": 3.68,
+        "median": 6.55,
+        "count": 16
+      }
+    },
+    "worst_for_rappi": [
+      {
+        "address_id": "cdmx_polanco_01",
+        "zone_type": "premium",
+        "city": "cdmx",
+        "delta_pct": 12.74
+      },
+      {
+        "address_id": "cdmx_narvarte_01",
+        "zone_type": "middle",
+        "city": "cdmx",
+        "delta_pct": 11.32
+      },
+      {
+        "address_id": "mty_sanpedro_01",
+        "zone_type": "premium",
+        "city": "mty",
+        "delta_pct": 11.11
+      },
+      {
+        "address_id": "mty_valle_01",
+        "zone_type": "premium",
+        "city": "mty",
+        "delta_pct": 11.11
+      },
+      {
+        "address_id": "mty_centro_01",
+        "zone_type": "middle",
+        "city": "mty",
+        "delta_pct": 8.89
+      }
+    ],
+    "best_for_rappi": [
+      {
+        "address_id": "gdl_americana_01",
+        "zone_type": "middle",
+        "city": "gdl",
+        "delta_pct": -14.81
+      },
+      {
+        "address_id": "gdl_centro_01",
+        "zone_type": "middle",
+        "city": "gdl",
+        "delta_pct": -14.81
+      },
+      {
+        "address_id": "gdl_tlaquepaque_01",
+        "zone_type": "peripheral",
+        "city": "gdl",
+        "delta_pct": -14.81
+      },
+      {
+        "address_id": "gdl_tonala_01",
+        "zone_type": "peripheral",
+        "city": "gdl",
+        "delta_pct": -14.81
+      },
+      {
+        "address_id": "gdl_chapalita_01",
+        "zone_type": "premium",
+        "city": "gdl",
+        "delta_pct": -6.88
+      }
+    ]
+  },
+  "insight3": {
+    "rappi_median_min": 13.5,
+    "uber_median_min": 35.0,
+    "rappi_advantage_min": 21.5,
+    "rappi_advantage_pct": 61.42857142857143
+  },
+  "insight4": {
+    "top_rappi_promos": {
+      "Envio gratis en tu primera orden | Viral Deal (Mcdo)": 66
+    },
+    "top_uber_promos": {}
+  },
+  "insight5": {
+    "big_mac_df": "city      cdmx  gdl  mty\nplatform                \nrappi       13    8    6\nubereats    14    8    1",
+    "asymmetric_coverage": [
+      {
+        "address_id": "cdmx_gam_01",
+        "zone_type": "peripheral",
+        "city": "cdmx",
+        "rappi": 0,
+        "ubereats": 3,
+        "rappi_ok": false,
+        "uber_ok": true
+      },
+      {
+        "address_id": "mty_guadalupe_01",
+        "zone_type": "peripheral",
+        "city": "mty",
+        "rappi": 0,
+        "ubereats": 3,
+        "rappi_ok": false,
+        "uber_ok": true
+      }
+    ]
+  }
+}
