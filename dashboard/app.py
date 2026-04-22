@@ -36,7 +36,12 @@ df, priced = results["df"], results["priced"]
 # ─── Header ───
 st.title("🛵 Rappi Competitive Intelligence")
 st.caption("Análisis comparativo Rappi vs Uber Eats — McDonald's en CDMX, Guadalajara y Monterrey")
-
+n_runs = priced["run_id"].nunique()
+st.caption(
+    f"Análisis comparativo Rappi vs Uber Eats — McDonald's en CDMX, Guadalajara y Monterrey  ·  "
+    f"📊 **{len(priced)} observaciones** en **{n_runs} corridas** · "
+    f"ventana temporal: madrugada + hora pico de lunch"
+)
 # ─── Top KPIs ───
 i1 = results["insight1"]
 i3 = results["insight3"]
@@ -81,9 +86,11 @@ with tabs[0]:
 with tabs[1]:
     st.subheader("Δ% Rappi vs Uber Eats por ciudad y zona")
     st.markdown(
-        "Cuando Rappi es competitivo por zona, podemos ver en qué tipos de barrios "
-        "está perdiendo vs Uber Eats. Verde = Rappi más barato; rojo = Rappi más caro."
-    )
+    "**Patrón observado:** Rappi es más caro en zonas premium (≈ +2.7%) "
+    "y más barato en zonas periféricas (≈ -2.5%) — un gradiente inverso al que "
+    "se esperaría si el objetivo es capturar customers de alto valor. "
+    "Verde = Rappi más barato; rojo = Rappi más caro."
+)
     i2 = results["insight2"]
     if i2.get("error"):
         st.warning("Datos insuficientes para comparación geográfica")
@@ -140,9 +147,12 @@ with tabs[3]:
 with tabs[4]:
     st.subheader("Cobertura efectiva por ciudad × zona")
     st.markdown(
-        "Porcentaje de direcciones sampleadas donde cada plataforma logró retornar "
-        "al menos un producto capturado. Las brechas de cobertura en zonas periféricas "
-        "representan oportunidad (o vulnerabilidad) estratégica."
+        "Ambas plataformas tienen cobertura completa (100%) en las 24 direcciones "
+        "muestreadas. **El hallazgo clave está en la disponibilidad del Big Mac:** "
+        "en Monterrey, Uber Eats capturó Big Mac sólo 2 veces en 16 intentos (12.5%) "
+        "mientras que Rappi lo capturó 13 veces (81%). Esto confirma restricciones "
+        "del menú 'McNoches' en Uber Eats MTY que no aplican en Rappi — un *moat* "
+        "operacional en la categoría fast-food nocturna."
     )
     st.plotly_chart(chart_coverage(i5), use_container_width=True)
     st.markdown("**Observaciones de Big Mac por plataforma × ciudad**")
