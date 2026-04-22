@@ -19,22 +19,23 @@ Sistema automatizado de inteligencia competitiva que compara **precios, tiempos 
 ---
 
 ## 🏗️ Arquitectura
-config/                   Direcciones, productos, McDonald's UUIDs
-scrapers/
-├── base.py             Proxy manager, logging, schema unificado
-├── product_matcher.py  Normaliza nombres de productos entre plataformas
-├── rappi.py            POST directo a /restaurant-bus/store/brand/id/706
-└── ubereats.py         Playwright bootstrap + httpx replay vía getStoreV1
-run_all.py                Orquestador — 24 direcciones × 2 plataformas
-scripts/retry_failed.py   Re-run solo de direcciones que fallaron
-analysis/
-├── core.py             Funciones puras: load, compute, chart (0 UI)
-└── insights.py         Notebook/script runner (5 insights)
-dashboard/app.py          Streamlit dashboard (6 tabs, reusa analysis/core)
-data/
-├── raw/                Dumps JSON por observación (para auditoría)
-└── processed/          CSVs unificados por corrida
 
+```text
+config/                  Direcciones, productos, McDonald's UUIDs
+scrapers/
+├── base.py              Proxy manager, logging, schema unificado
+├── product_matcher.py   Normaliza nombres de productos entre plataformas
+├── rappi.py             POST directo a /restaurant-bus/store/brand/id/706
+└── ubereats.py          Playwright bootstrap + httpx replay vía getStoreV1
+run_all.py               Orquestador — 24 direcciones × 2 plataformas
+scripts/retry_failed.py  Re-run solo de direcciones que fallaron
+analysis/
+├── core.py              Funciones puras: load, compute, chart (0 UI)
+└── insights.py          Notebook/script runner (5 insights)
+dashboard/app.py         Streamlit dashboard (6 tabs, reusa analysis/core)
+data/
+├── raw/                 Dumps JSON por observación (para auditoría)
+└── processed/           CSVs unificados por corrida
 **Principio de diseño:** `analysis/core.py` expone funciones puras (sin UI, sin side effects). Tanto el notebook como el dashboard de Streamlit las consumen. Cero duplicación, una sola fuente de verdad.
 
 ---
