@@ -107,14 +107,35 @@ with tabs[2]:
     st.dataframe(i3["by_city_df"])
 
 with tabs[3]:
-    st.subheader("Intensidad promocional (flujo anónimo)")
+    st.subheader("Intensidad promocional")
     i4 = results["insight4"]
+
+    # Headline
+    rappi_rate = priced[priced["platform"]=="rappi"]["promo_present"].mean() * 100
+    uber_rate = priced[priced["platform"]=="ubereats"]["promo_present"].mean() * 100
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Rappi — observaciones con promo", f"{rappi_rate:.0f}%")
+    col2.metric("Uber Eats — observaciones con promo", f"{uber_rate:.0f}%")
+    ratio = rappi_rate / uber_rate if uber_rate > 0 else float("inf")
+    col3.metric("Ratio Rappi : Uber", f"{ratio:.1f}×")
+
     st.plotly_chart(chart_promo_rate(i4), use_container_width=True)
+
     c1, c2 = st.columns(2)
-    c1.markdown("**Top promos Rappi**")
-    c1.write(i4["top_rappi_promos"] or "Sin promociones visibles")
-    c2.markdown("**Top promos Uber Eats**")
-    c2.write(i4["top_uber_promos"] or "Sin promociones visibles en el flujo anónimo")
+    with c1:
+        st.markdown("**Top descripciones de promo en Rappi**")
+        if i4["top_rappi_promos"]:
+            for promo, count in i4["top_rappi_promos"].items():
+                st.markdown(f"- `{count}×` {promo}")
+        else:
+            st.caption("Ninguna promo visible en este run")
+    with c2:
+        st.markdown("**Top descripciones de promo en Uber Eats**")
+        if i4["top_uber_promos"]:
+            for promo, count in i4["top_uber_promos"].items():
+                st.markdown(f"- `{count}×` {promo}")
+        else:
+            st.caption("Uber Eats no expone descripciones de promo en el flujo anónimo de la API")
 
 with tabs[4]:
     st.subheader("Cobertura efectiva por ciudad × zona")
