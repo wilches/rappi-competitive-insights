@@ -36,6 +36,7 @@ dashboard/app.py         Streamlit dashboard (6 tabs, reusa analysis/core)
 data/
 ├── raw/                 Dumps JSON por observación (para auditoría)
 └── processed/           CSVs unificados por corrida
+```
 **Principio de diseño:** `analysis/core.py` expone funciones puras (sin UI, sin side effects). Tanto el notebook como el dashboard de Streamlit las consumen. Cero duplicación, una sola fuente de verdad.
 
 ---
