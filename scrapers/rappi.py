@@ -27,8 +27,8 @@ RAPPI_ENDPOINT = f"https://services.mxgrability.rappi.com/api/restaurant-bus/sto
 # How to refresh: open rappi.com.mx in Chrome (with MX proxy), enter any address,
 # click McDonald's, open DevTools → Network → find a request to services.mxgrability.rappi.com,
 # copy the `authorization` and `deviceid` headers here.
-RAPPI_AUTH_TOKEN = "ft.gAAAAABp5rw_GwcamM5U0UEb3N5nKM6WQqiFIx4ulqOO_XH1J5_nRtZ9Z3dyp62s3Q_WYzJU1MWgVg1jMY32bxhr25gvjKVtqyCuV1tdawt5yxdwi7IW2Qr1tr7yN58lpYAdqHslyeMrrcxtNwlxN8XRLZzZ-t-ewF4j8SfNN0KSxo7nBmSrs_H9TBN1w_trIj44m5bMyGyYRcHmvM9QQUKfcbtt04qlBZ3eK9bIcGRYkVVyG-cMFamXKihnzIRDRsJ7uZhnO5wuSX6WyKwaOv272NRjqRNDagR1rlFzYoWT745Wp7xhKwySXCh6PmjMXxSxxjJGVyFisJaC68JJMhqJdvTRL0PFC20NsVw9lwqjFNbBQLem4InL8EkW632FPKenoZ7OVvWcBNueIkRdMbCRgNSPYlENtA=="
-RAPPI_DEVICE_ID = "c0709df4-3b5c-48eb-b49d-a3f532f0e52aR"
+RAPPI_AUTH_TOKEN = "ft.gAAAAABp6SfWCHc_sBcwkG6IrCOrAmLi6nrrCecx-1pDYuMJA0QxtAZv4Y8-Ilbgfvb7lmOY81z5X-V9RguWuV22fXLoIE9gRmX2ETXWkR5LS_wuw6My7b4SrDLt41YVz8a8XnTegsIShBZsH6HCQ_NDjLyIpO8PaeqXPqkOaNfz4xmhUifHXcqGx40PCUrRAV2rvpBdC1nFTvR-lTfl9nfyIvm9QJx0pYbDK6bSVJB8FbT0X-2kXjguHiwP4qggELqxRn_HYpZDnEBqRZvSwqJvlWWsUl_ZEbGu9bVBnuxndnvvBS2-Z5Ja64E1ZCREBYRWKnSzZ098OJLZ-4RIb18Xq4y7aaJ5VHn-m2vh2IZpjXJT9QO7_pB0fYJ-CeRHEH2SWLLcbLMnOIzvRlaLI06LcGGCVMPGlA=="
+RAPPI_DEVICE_ID = "28c58a08-983c-459f-9286-63ca2d44114dR"
 
 def _dump_raw(payload: dict, address_id: str, run_id: str):
     """Save raw API response to data/raw for debugging."""

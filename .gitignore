@@ -1,7 +1,7 @@
 venv/
 .env
 data/raw/*.json
-data/processed/*.csv
+# data/processed/*.csv
 logs/*.log
 __pycache__/
 *.pyc
